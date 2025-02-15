@@ -9,14 +9,14 @@ title: Home
         <h2>Latest Writeups</h2>
         <ul>
             {% for writeup in site.writeups limit:5 %}
-            <li><a href="{{ writeup.url }}">{{ writeup.title }}</a></li>
+            <li><a href="/secVlog{{ writeup.url }}">{{ writeup.title }}</a></li>
             {% endfor %}
         </ul>
 
         <h2>Latest Articles</h2>
         <ul>
             {% for article in site.articles limit:5 %}
-            <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+            <li><a href="/secVlog{{ article.url }}">{{ article.title }}</a></li>
             {% endfor %}
         </ul>
     </aside>
@@ -31,12 +31,12 @@ title: Home
                 <span class="difficulty">Medium</span>
             </div>
             <div class="tags">
-                <a href="/tags/web" class="tag">#Web</a>
-                <a href="/tags/exploitation" class="tag">#Exploitation</a>
-                <a href="/tags/cookies" class="tag">#Cookies</a>
+                <a href="/secVlog/tags/web" class="tag">#Web</a>
+                <a href="/secVlog/tags/exploitation" class="tag">#Exploitation</a>
+                <a href="/secVlog/tags/cookies" class="tag">#Cookies</a>
             </div>
             <p>This writeup covers the "Cookie Monster" challenge from Example CTF 2025, where we exploit a vulnerability in cookie handling to gain unauthorized access.</p>
-            <a href="/writeups/cookie-monster" class="view-all">Read More →</a>
+            <a href="/secVlog/writeups/cookie-monster" class="view-all">Read More →</a>
         </div>
     </main>
 </div>
