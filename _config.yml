@@ -1,7 +1,7 @@
 title: CTF Writeups & Security Research
 description: A collection of CTF writeups and cybersecurity articles
 url: https://tekila11.github.io/secVlog
-baseurl: ""
+baseurl: "/"
 
 # Build settings
 markdown: kramdown
