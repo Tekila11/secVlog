@@ -8,7 +8,7 @@ title: Home
         <div class="post-grid">
             {% for writeup in site.writeups limit:3 %}
             <div class="post-card">
-                <h3><a href="{{ writeup.url }}">{{ writeup.title }}</a></h3>
+                <h3><a href="/secVlog{{ writeup.url }}">{{ writeup.title }}</a></h3>
                 <div class="post-meta">
                     <span class="date">{{ writeup.date | date: "%B %d, %Y" }}</span>
                     <span class="event">{{ writeup.event }}</span>
