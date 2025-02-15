@@ -10,7 +10,7 @@
     --gradient-blue: linear-gradient(135deg, #00fff2 0%, #0091ff 100%);
 }
 
-/* Base Styles with System Font Stack */
+/* Base Styles */
 body {
     background-color: var(--dark-bg);
     background-image: 
