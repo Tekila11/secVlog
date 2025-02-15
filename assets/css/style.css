@@ -260,33 +260,52 @@ h3 { font-size: 1.5rem; }
     transform: translateY(-2px);
 }
 
-/* Code Blocks */
+/* Code Block Styles */
 pre {
     background: var(--darker-bg);
+    border: 1px solid rgba(0, 255, 242, 0.1);
     border-radius: 8px;
     padding: 1.5rem;
     overflow-x: auto;
-    border: 1px solid rgba(0, 255, 242, 0.1);
     margin: 1.5rem 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
 code {
     font-family: 'Fira Code', monospace;
     font-size: 0.9rem;
-    line-height: 1.6;
+    background: rgba(0, 255, 242, 0.08);
+    color: var(--neon-blue);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 255, 242, 0.1);
 }
 
-/* Article Content */
-.article-content, .writeup-content {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
+pre code {
+    background: transparent;
+    padding: 0;
+    border: none;
+    color: inherit;
 }
 
-.article-content p, .writeup-content p {
+/* Syntax Highlighting (Optional) */
+.highlight {
+    background: var(--darker-bg);
+    border: 1px solid rgba(0, 255, 242, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
     margin: 1.5rem 0;
 }
+
+.highlight .c { color: #6c757d; } /* Comments */
+.highlight .k { color: #00fff2; } /* Keywords */
+.highlight .n { color: #e1e1ff; } /* Names */
+.highlight .s { color: #ff6b6b; } /* Strings */
+.highlight .mi { color: #f78c6c; } /* Numbers */
 
 /* Enhanced Footer */
 footer {
