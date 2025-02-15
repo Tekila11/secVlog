@@ -48,4 +48,31 @@ title: Home
         </div>
         <a href="/articles" class="view-all">View all articles →</a>
     </section>
+    <section class="featured-section">
+    <div class="featured-card">
+        <h3>Latest Writeup: Web Exploitation</h3>
+        <div class="post-meta">
+            <span class="date">February 15, 2025</span>
+            <span class="event">Example CTF 2025</span>
+            <span class="difficulty">Medium</span>
+        </div>
+        <div class="tags">
+            <a href="/tags/web" class="tag">#Web</a>
+            <a href="/tags/exploitation" class="tag">#Exploitation</a>
+            <a href="/tags/cookies" class="tag">#Cookies</a>
+        </div>
+    </div>
+    <div class="featured-card">
+        <h3>Latest Article: Introduction to Web Security</h3>
+        <div class="post-meta">
+            <span class="date">February 15, 2025</span>
+            <span class="read-time">2 min read</span>
+        </div>
+        <div class="tags">
+            <a href="/tags/security" class="tag">#Security</a>
+            <a href="/tags/web" class="tag">#Web</a>
+            <a href="/tags/best-practices" class="tag">#Best Practices</a>
+        </div>
+    </div>
+</section>
 </div>
