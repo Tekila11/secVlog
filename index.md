@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to My CTF Writeups
+# Welcome to secVlog Blog
 
 <div class="home">
     <section class="latest-writeups">
