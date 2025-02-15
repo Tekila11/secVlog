@@ -8,7 +8,7 @@ title: Writeups
 <ul>
     {% for writeup in site.writeups %}
     <li>
-        <a href="{{ writeup.url }}">{{ writeup.title }}</a>
+        <a href="/secVlog{{ writeup.url }}">{{ writeup.title }}</a>
         <span class="post-meta">
             {{ writeup.date | date: "%B %d, %Y" }} | {{ writeup.event }} | {{ writeup.difficulty }}
         </span>
