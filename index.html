@@ -16,7 +16,7 @@ title: Home
                 </div>
                 <div class="tags">
                     {% for tag in writeup.tags limit:3 %}
-                    <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+                    <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -30,14 +30,14 @@ title: Home
         <div class="post-grid">
             {% for article in site.articles limit:3 %}
             <div class="post-card">
-                <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                <h3><a href="/secVlog{{ article.url }}">{{ article.title }}</a></h3>
                 <div class="post-meta">
                     <span class="date">{{ article.date | date: "%B %d, %Y" }}</span>
                     <span class="read-time">{{ article.content | number_of_words | divided_by: 180 | plus: 1 }} min read</span>
                 </div>
                 <div class="tags">
                     {% for tag in article.tags limit:3 %}
-                    <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+                    <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
                     {% endfor %}
                 </div>
             </div>
