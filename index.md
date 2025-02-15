@@ -3,22 +3,26 @@ layout: default
 title: Home
 ---
 
-# Welcome to secVlog Blog
-
 <div class="container">
     <!-- Sidebar -->
     <aside class="sidebar">
-        <h2>Navigation</h2>
-        <nav>
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/writeups' | relative_url }}">Writeups</a>
-            <a href="{{ '/articles' | relative_url }}">Articles</a>
-            <a href="{{ '/about' | relative_url }}">About</a>
-        </nav>
+        <h2>Latest Writeups</h2>
+        <ul>
+            {% for writeup in site.writeups limit:5 %}
+            <li><a href="{{ writeup.url }}">{{ writeup.title }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <h2>Latest Articles</h2>
+        <ul>
+            {% for article in site.articles limit:5 %}
+            <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
     </aside>
 
     <!-- Main Content -->
-<main class="main-content">
+    <main class="main-content">
         <div class="featured-article">
             <h2>Latest Writeup: Web Exploitation</h2>
             <div class="post-meta">
