@@ -377,6 +377,75 @@ footer {
     }
 }
 
+/* About Page Styles */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 242, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: var(--neon-blue);
+    margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: var(--neon-blue);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-content ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.about-content a {
+    color: var(--neon-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-content a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px var(--neon-glow);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 1rem;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.75rem;
+    }
+}
+
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     ::selection {
