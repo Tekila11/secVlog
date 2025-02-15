@@ -1,21 +1,21 @@
 title: CTF Writeups & Security Research
 description: A collection of CTF writeups and cybersecurity articles
 url: https://tekila11.github.io/secVlog
-baseurl: ""
+baseurl: "/secVlog"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /secVlog/:categories/:title/
+permalink: /:categories/:title/
 
 # Collections
 collections:
   writeups:
     output: true
-    permalink: /secVlog/writeups/:path/
+    permalink: /writeups/:path/
   articles:
     output: true
-    permalink: /secVlog/articles/:path/
+    permalink: /articles/:path/
 
 defaults:
   - scope:
