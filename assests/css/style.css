@@ -1,0 +1,116 @@
+:root {
+    --neon-blue: #00fff2;
+    --dark-bg: #0a0b1c;
+    --darker-bg: #050612;
+    --text-color: #e1e1ff;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: var(--darker-bg);
+    border-bottom: 2px solid var(--neon-blue);
+    padding: 1rem;
+}
+
+/* Navigation */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--neon-blue);
+    text-decoration: none;
+}
+
+/* Content styles */
+.post-card {
+    background-color: var(--darker-bg);
+    border: 1px solid var(--neon-blue);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0.5rem 0;
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.tag {
+    background-color: rgba(0, 255, 242, 0.1);
+    color: var(--neon-blue);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* Code highlighting */
+.highlight {
+    background: var(--darker-bg);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+pre {
+    margin: 0;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.pagination a {
+    color: var(--neon-blue);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--neon-blue);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+}

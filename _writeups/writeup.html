@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="writeup">
+    <header class="writeup-header">
+        <h1>{{ page.title }}</h1>
+        <div class="writeup-meta">
+            <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+            <span class="event">{{ page.event }}</span>
+            <span class="difficulty">Difficulty: {{ page.difficulty }}</span>
+            <span class="points">Points: {{ page.points }}</span>
+        </div>
+        <div class="tags">
+            {% for tag in page.tags %}
+            <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+            {% endfor %}
+        </div>
+    </header>
+
+    <div class="writeup-content">
+        {{ content }}
+    </div>
+
+    <footer class="writeup-footer">
+        <div class="share">
+            <h3>Share this writeup:</h3>
+            <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}%20{{ site.url }}{{ page.url }}" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</article>

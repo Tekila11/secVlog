@@ -1,18 +1,40 @@
-title: "CTF & Cybersecurity Blog"
-description: "Write-ups and articles on cybersecurity."
+title: CTF Writeups & Security Research
+description: A collection of CTF writeups and cybersecurity articles
+url: https://tekila11.github.io/secVlog
 baseurl: ""
-url: "https://yourgithubusername.github.io"
 
-permalink: /:categories/:title/
+# Build settings
+markdown: kramdown
 highlighter: rouge
+permalink: /:categories/:title/
 
+# Collections
 collections:
   writeups:
     output: true
-  blog:
+    permalink: /writeups/:path/
+  articles:
     output: true
+    permalink: /articles/:path/
 
-theme: null
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: "writeups"
+    values:
+      layout: "writeup"
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
