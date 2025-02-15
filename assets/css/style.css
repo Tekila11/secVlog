@@ -106,6 +106,79 @@ h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 
+/* Featured Section */
+.featured-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.featured-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 255, 242, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gradient-blue);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 255, 242, 0.2);
+    background: var(--hover-bg);
+}
+
+.featured-card:hover::before {
+    transform: scaleX(1);
+}
+
+.featured-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.featured-card .post-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.featured-card .tags {
+    margin-top: 0.5rem;
+}
+
+.featured-card .tag {
+    display: inline-block;
+    background: rgba(0, 255, 242, 0.08);
+    color: var(--neon-blue);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.featured-card .tag:hover {
+    background: rgba(0, 255, 242, 0.15);
+    transform: translateY(-2px);
+}
+
+
 /* Modern Card Design */
 .post-card {
     background: var(--card-bg);
@@ -312,6 +385,12 @@ footer {
     }
 }
 
+/* Responsive Design for Featured Section */
+@media (max-width: 768px) {
+    .featured-section {
+        grid-template-columns: 1fr;
+    }
+}
 /* Print Styles */
 @media print {
     body {
