@@ -1,30 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - CTF Writeups</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="/secVlog" class="logo">~/CTF_Writeups</a>
-            <div class="nav-links">
-                <a href="/secVlog">Home</a>
-                <a href="/secVlog/writeups">Writeups</a>
-                <a href="/secVlog/articles">Articles</a>
-                <a href="/secVlog/about">About</a>
-            </div>
-        </nav>
-    </header>
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        
+        <main>
+            {{ content }}
+        </main>
 
-    <main>
-        {{ content }}
-    </main>
-
-    <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} - Built with Jekyll</p>
-    </footer>
-</body>
+        {% include footer.html %}
+    </body>
 </html>

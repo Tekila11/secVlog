@@ -2,13 +2,16 @@
 layout: default
 title: Home
 ---
+
+# Welcome to My CTF Writeups
+
 <div class="home">
     <section class="latest-writeups">
         <h2>Latest CTF Writeups</h2>
         <div class="post-grid">
             {% for writeup in site.writeups limit:3 %}
             <div class="post-card">
-                <h3><a href="/secVlog{{ writeup.url }}">{{ writeup.title }}</a></h3>
+                <h3><a href="{{ writeup.url }}">{{ writeup.title }}</a></h3>
                 <div class="post-meta">
                     <span class="date">{{ writeup.date | date: "%B %d, %Y" }}</span>
                     <span class="event">{{ writeup.event }}</span>
@@ -16,33 +19,33 @@ title: Home
                 </div>
                 <div class="tags">
                     {% for tag in writeup.tags limit:3 %}
-                    <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+                    <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
                     {% endfor %}
                 </div>
             </div>
             {% endfor %}
         </div>
-        <a href="/secVlog/writeups" class="view-all">View all writeups →</a>
+        <a href="/writeups" class="view-all">View all writeups →</a>
     </section>
 
-    <section class="latest-articles">
+<section class="latest-articles">
         <h2>Latest Articles</h2>
         <div class="post-grid">
             {% for article in site.articles limit:3 %}
             <div class="post-card">
-                <h3><a href="/secVlog{{ article.url }}">{{ article.title }}</a></h3>
+                <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
                 <div class="post-meta">
                     <span class="date">{{ article.date | date: "%B %d, %Y" }}</span>
                     <span class="read-time">{{ article.content | number_of_words | divided_by: 180 | plus: 1 }} min read</span>
                 </div>
                 <div class="tags">
                     {% for tag in article.tags limit:3 %}
-                    <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+                    <a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a>
                     {% endfor %}
                 </div>
             </div>
             {% endfor %}
         </div>
-        <a href="/_articles/" class="view-all">View all articles →</a>
+        <a href="/articles" class="view-all">View all articles →</a>
     </section>
 </div>
