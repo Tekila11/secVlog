@@ -314,7 +314,7 @@ pre code {
 
 /* Syntax Highlighting (Optional) */
 .highlight {
-    background: #071405; /* Slightly lighter dark background */
+    background: rgba(0, 255, 242, 0.08);  /* Slightly lighter dark background */
     border: none; /* Neon border */
     border-radius: 8px;
     padding: 1.5rem;
