@@ -308,14 +308,14 @@ code {
 pre code {
     background: transparent; /* No background for code inside pre */
     padding: 0;
-    border: none;
+    border: var(--border-color);
     color: inherit; /* Inherit text color from pre */
 }
 
 /* Syntax Highlighting (Optional) */
 .highlight {
     background: #1e1e2f; /* Slightly lighter dark background */
-    border: none; /* Neon border */
+    border: var(--border-color); /* Neon border */
     border-radius: 8px;
     padding: 1.5rem;
     overflow-x: auto;
