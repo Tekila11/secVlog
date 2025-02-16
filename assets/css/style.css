@@ -324,7 +324,7 @@ pre code {
 
 .highlight .c { color: #6c757d; } /* Comments */
 .highlight .k { color: #00fff2; } /* Keywords (neon blue) */
-.highlight .n { color: #e1e1ff; } /* Names (light text) */
+.highlight .n { color: hsl(70, 78%, 15%); } /* Names (light text) */
 .highlight .s { color: #ff6b6b; } /* Strings (red) */
 .highlight .mi { color: #f78c6c; } /* Numbers (orange) */
 /* Enhanced Footer */
