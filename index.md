@@ -59,7 +59,7 @@ title: Home
                     <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
                     {% endfor %}
                 </div>
-                <p>{{ latest_article.excerpt | default: latest_article.content | strip_html | truncate: 200 }}</p>
+                <p>{{ latest_article.excerpt | default: latest_article.content | strip_html | truncate: 400 }}</p>
                 <a href="/secVlog{{ latest_article.url }}" class="view-all">Read More →</a>
             </div>
         {% endif %}
