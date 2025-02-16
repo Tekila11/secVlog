@@ -473,7 +473,7 @@ footer {
 .center {
     max-width: 300px;
     display: block;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     text-align: center;
 }
