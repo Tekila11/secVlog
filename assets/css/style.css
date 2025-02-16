@@ -314,8 +314,8 @@ pre code {
 
 /* Syntax Highlighting (Optional) */
 .highlight {
-    background: #1e1e2f; /* Slightly lighter dark background */
-    border: var(--border-color); /* Neon border */
+    background: #071405; /* Slightly lighter dark background */
+    border: none; /* Neon border */
     border-radius: 8px;
     padding: 1.5rem;
     overflow-x: auto;
