@@ -7,6 +7,7 @@ tags: [security, web, tutorials, best-practices]
 ---
 
 Web security is fundamental to protecting modern applications. This article covers essential concepts and common vulnerabilities that every security professional should understand.
+![XSS](/assets/images/image.png)
 
 ## 1. Cross-Site Scripting (XSS)
 
