@@ -469,6 +469,14 @@ footer {
     text-shadow: 0 0 8px var(--neon-glow);
 }
 
+/* Center images */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-content {
