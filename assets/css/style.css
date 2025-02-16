@@ -315,7 +315,7 @@ pre code {
 /* Syntax Highlighting (Optional) */
 .highlight {
     background: #1e1e2f; /* Slightly lighter dark background */
-    border: var(--border-color); /* Neon border */
+    border: none; /* Neon border */
     border-radius: 8px;
     padding: 1.5rem;
     overflow-x: auto;
@@ -344,7 +344,7 @@ footer {
     align-items: center;
     padding: 0.8rem 1.5rem;
     background: rgba(0, 255, 242, 0.1);
-    border: 1px solid rgba(0, 255, 242, 0.2);
+    border: var(--border-color);
     border-radius: 8px;
     color: var(--neon-green);
     font-weight: 500;
