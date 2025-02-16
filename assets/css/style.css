@@ -459,7 +459,7 @@ footer {
 }
 
 .about-content a {
-    color: var(--neon-greem);
+    color: var(--neon-green);
     text-decoration: none;
     transition: all 0.3s ease;
 }
