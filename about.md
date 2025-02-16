@@ -16,7 +16,7 @@ title: About
 <p>This blog is a space for me to document my CTF writeups, share security insights, and explore new technologies.</p>
 
 <h2>Contact Me</h2>
-<p>Feel free to reach out to me at <a href="ashrafabiba11@gmail.com">email</a> or connect with me on <a href="https://x.com/TEKILA_Twittes">Twitter</a>.</p>
+<p>Feel free to reach out to me at my <a href="ashrafabiba11@gmail.com">email</a> or connect with me on <a href="https://x.com/TEKILA_Twittes">x.xom</a>.</p>
 
 
 
