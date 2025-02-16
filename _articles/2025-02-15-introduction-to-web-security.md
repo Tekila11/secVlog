@@ -8,8 +8,8 @@ tags: [security, web, tutorials, best-practices]
 
 Web security is fundamental to protecting modern applications. This article covers essential concepts and common vulnerabilities that every security professional should understand.
 
-<div style="text-align: center;">
-    <img src="{{ site.baseurl }}/assets/images/image.png" alt="Dark web XSS">
+<div class="center">
+    <img src="{{ site.baseurl }}/assets/images/image.png" alt="Dark web XSS" >
 </div>
 
 ## 1. Cross-Site Scripting (XSS)
