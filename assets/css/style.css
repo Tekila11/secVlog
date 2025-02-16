@@ -471,7 +471,7 @@ footer {
 
 /* Center images */
 .center {
-    max-width: 300px;
+    width: 300px;
     display: block;
     margin-left: 0;
     margin-right: auto;
