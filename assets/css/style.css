@@ -40,7 +40,7 @@ a:hover {
 header {
     background-color: rgba(5, 6, 18, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 255, 242, 0.1);
+    border-bottom: var(--border-color);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -83,7 +83,7 @@ nav {
 }
 
 .nav-links a:hover {
-    background: rgba(0, 255, 242, 0.1);
+    background: rgba(0, 0, 0, 0.993)
     transform: translateY(-2px);
 }
 
@@ -132,7 +132,7 @@ nav {
 }
 
 .sidebar ul li a:hover {
-    color: var(--neon-green);
+    color: #131530;
     text-shadow: 0 0 8px var(--neon-glow);
 }
 
@@ -226,7 +226,7 @@ h3 { font-size: 1.5rem; }
 .post-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    border-color: rgba(0, 255, 242, 0.2);
+    border-color: var(--border-color);
     background: var(--hover-bg);
 }
 
@@ -331,7 +331,7 @@ pre code {
 
 footer {
     background: var(--darker-bg);
-    border-top: 1px solid rgba(0, 255, 242, 0.1);
+    border-top: var(--border-color);
     padding: 3rem 1rem;
     margin-top: 4rem;
     text-align: center;
