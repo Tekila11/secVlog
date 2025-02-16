@@ -43,7 +43,7 @@ title: Home
                     <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
                     {% endfor %}
                 </div>
-                <p>{{ latest_writeup.excerpt | default: latest_writeup.content | strip_html | truncate: 200 }}</p>
+                <p>{{ latest_writeup.excerpt | default: latest_writeup.content | strip_html | truncate: 400 }}</p>
                 <a href="/secVlog{{ latest_writeup.url }}" class="view-all">Read More →</a>
             </div>
         {% else %}
