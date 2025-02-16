@@ -21,22 +21,47 @@ title: Home
         </ul>
     </aside>
 
-    <!-- Main Content -->
     <main class="main-content">
-        <div class="featured-article">
-            <h2>Latest Writeup: Web Exploitation</h2>
-            <div class="post-meta">
-                <span class="date">February 15, 2025</span>
-                <span class="event">Example CTF 2025</span>
-                <span class="difficulty">Medium</span>
+        {% assign latest_writeup = site.writeups | sort: "date" | last %}
+        {% assign latest_article = site.articles | sort: "date" | last %}
+
+        {% if latest_writeup.date > latest_article.date %}
+            <!-- Display Latest Writeup -->
+            <div class="featured-article">
+                <h2>{{ latest_writeup.title }}</h2>
+                <div class="post-meta">
+                    <span class="date">{{ latest_writeup.date | date: "%B %d, %Y" }}</span>
+                    {% if latest_writeup.event %}
+                        <span class="event">{{ latest_writeup.event }}</span>
+                    {% endif %}
+                    {% if latest_writeup.difficulty %}
+                        <span class="difficulty">{{ latest_writeup.difficulty }}</span>
+                    {% endif %}
+                </div>
+                <div class="tags">
+                    {% for tag in latest_writeup.tags %}
+                    <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                <p>{{ latest_writeup.excerpt | default: latest_writeup.content | strip_html | truncate: 200 }}</p>
+                <a href="/secVlog{{ latest_writeup.url }}" class="view-all">Read More →</a>
             </div>
-            <div class="tags">
-                <a href="/secVlog/tags/web" class="tag">#Web</a>
-                <a href="/secVlog/tags/exploitation" class="tag">#Exploitation</a>
-                <a href="/secVlog/tags/cookies" class="tag">#Cookies</a>
+        {% else %}
+            <!-- Display Latest Article -->
+            <div class="featured-article">
+                <h2>{{ latest_article.title }}</h2>
+                <div class="post-meta">
+                    <span class="date">{{ latest_article.date | date: "%B %d, %Y" }}</span>
+                    <span class="read-time">{{ latest_article.content | number_of_words | divided_by: 180 | plus: 1 }} min read</span>
+                </div>
+                <div class="tags">
+                    {% for tag in latest_article.tags %}
+                    <a href="/secVlog/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                <p>{{ latest_article.excerpt | default: latest_article.content | strip_html | truncate: 200 }}</p>
+                <a href="/secVlog{{ latest_article.url }}" class="view-all">Read More →</a>
             </div>
-            <p>This writeup covers the "Cookie Monster" challenge from Example CTF 2025, where we exploit a vulnerability in cookie handling to gain unauthorized access.</p>
-            <a href="/secVlog/writeups/cookie-monster" class="view-all">Read More →</a>
-        </div>
+        {% endif %}
     </main>
 </div>
