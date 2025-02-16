@@ -9,9 +9,8 @@ tags: [security, web, tutorials, best-practices]
 Web security is fundamental to protecting modern applications. This article covers essential concepts and common vulnerabilities that every security professional should understand.
 
 <div class="center">
-    ![image]({{ site.baseurl }}/assets/images/image.png)
+    <img src="{{ site.baseurl }}/assets/images/image.png" alt="Challenge Screenshot" width="500">
 </div>
-
 ## 1. Cross-Site Scripting (XSS)
 
 Cross-Site Scripting occurs when attackers inject malicious scripts into web pages viewed by other users. There are three main types:
