@@ -83,7 +83,7 @@ nav {
 }
 
 .nav-links a:hover {
-    background: rgba(0, 0, 0, 0.993)
+    background: rgba(0, 0, 0, 0.993);
     transform: translateY(-2px);
 }
 
@@ -324,7 +324,7 @@ pre code {
 
 .highlight .c { color: #6c757d; } /* Comments */
 .highlight .k { color: #00fff2; } /* Keywords (neon blue) */
-.highlight .n { color: hsl(70, 78%, 15%); } /* Names (light text) */
+.highlight .n { color: hsl(0, 0%, 95%); } /* Names (light text) */
 .highlight .s { color: #ff6b6b; } /* Strings (red) */
 .highlight .mi { color: #f78c6c; } /* Numbers (orange) */
 /* Enhanced Footer */
