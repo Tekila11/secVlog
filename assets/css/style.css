@@ -58,7 +58,7 @@ nav {
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
-    background: var(--gradient-blue);
+    background: var(--gradient-green);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
