@@ -22,17 +22,17 @@ Learning assembly language can help you:
 
 ### Registers
 Registers are small, fast storage locations within the CPU. Common registers in x86 assembly include:
-- `EAX`: Accumulator register (used for arithmetic operations).
-- `EBX`: Base register (used for memory addressing).
-- `ECX`: Counter register (used for loops).
-- `EDX`: Data register (used for I/O operations).
+- `EAX` : Accumulator register (used for arithmetic operations).
+- `EBX` : Base register (used for memory addressing).
+- `ECX` : Counter register (used for loops).
+- `EDX` : Data register (used for I/O operations).
 
 ### Instructions
 Assembly instructions are simple commands that the CPU can execute. For example:
-- `MOV`: Move data between registers or memory.
-- `ADD`: Add two values.
-- `SUB`: Subtract one value from another.
-- `JMP`: Jump to a different part of the code.
+- `MOV` : Move data between registers or memory.
+- `ADD` : Add two values.
+- `SUB` : Subtract one value from another.
+- `JMP` : Jump to a different part of the code.
 
 ### Example: Hello World in x86 Assembly
 Here’s a simple "Hello, World!" program in x86 assembly:
