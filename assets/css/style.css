@@ -281,8 +281,8 @@ h3 { font-size: 1.5rem; }
 
 /* Code Block Styles */
 pre {
-    background: var(--darker-bg);
-    border: 1px solid rgba(0, 255, 242, 0.1);
+    background: #f5f5f5; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
     border-radius: 8px;
     padding: 1.5rem;
     overflow-x: auto;
@@ -290,30 +290,30 @@ pre {
     font-family: 'Fira Code', monospace;
     font-size: 0.9rem;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #333; /* Dark text for better contrast */
 }
 
 code {
     font-family: 'Fira Code', monospace;
     font-size: 0.9rem;
-    background: rgba(0, 255, 242, 0.08);
-    color: var(--neon-blue);
+    background: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text for better contrast */
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
-    border: 1px solid rgba(0, 255, 242, 0.1);
+    border: 1px solid #ddd; /* Light border */
 }
 
 pre code {
-    background: transparent;
+    background: transparent; /* No background for code inside pre */
     padding: 0;
     border: none;
-    color: inherit;
+    color: inherit; /* Inherit text color from pre */
 }
 
 /* Syntax Highlighting (Optional) */
 .highlight {
-    background: var(--darker-bg);
-    border: 1px solid rgba(0, 255, 242, 0.1);
+    background: #f5f5f5; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
     border-radius: 8px;
     padding: 1.5rem;
     overflow-x: auto;
@@ -321,12 +321,12 @@ pre code {
 }
 
 .highlight .c { color: #6c757d; } /* Comments */
-.highlight .k { color: #00fff2; } /* Keywords */
-.highlight .n { color: #e1e1ff; } /* Names */
-.highlight .s { color: #ff6b6b; } /* Strings */
-.highlight .mi { color: #f78c6c; } /* Numbers */
-
+.highlight .k { color: #007bff; } /* Keywords */
+.highlight .n { color: #333; } /* Names */
+.highlight .s { color: #d63384; } /* Strings */
+.highlight .mi { color: #fd7e14; } /* Numbers */
 /* Enhanced Footer */
+
 footer {
     background: var(--darker-bg);
     border-top: 1px solid rgba(0, 255, 242, 0.1);
