@@ -67,6 +67,6 @@ db.query(query, [username]);
 Web security is an ongoing process that requires constant vigilance and updates to security measures as new vulnerabilities are discovered.
 
 ## Resources
-- OWASP Top 10
-- Web Security Testing Guide
-- Mozilla Web Security Guidelines
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+- [Mozilla Web Security Guidelines](https://wiki.mozilla.org/Security/Guidelines/Web_Security)
