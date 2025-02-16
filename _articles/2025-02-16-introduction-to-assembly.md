@@ -75,13 +75,5 @@ Assembly language is a powerful tool for understanding how computers work and wr
 ## Further Reading
 
 - [x86 Assembly Guide](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
-
-- [ARM Assembly Basics]("https://azeria-labs.com/writing-arm-assembly-part-1/")
-
-- [NASM Tutorial]("https://www.nasm.us/doc/")
-
-<ul>
-            <li><a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html">x86 Assembly Guide</a></li>
-            <li><a href="https://azeria-labs.com/writing-arm-assembly-part-1/">ARM Assembly Basics</a></li>
-            <li><a href="https://www.nasm.us/doc/">NASM Tutorial</a></li>
-        </ul>
+- [ARM Assembly Basics](https://azeria-labs.com/writing-arm-assembly-part-1/)
+- [NASM Tutorial](https://www.nasm.us/doc/)
