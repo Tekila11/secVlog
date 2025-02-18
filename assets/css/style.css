@@ -136,6 +136,28 @@ nav {
     text-shadow: 0 0 8px var(--neon-glow);
 }
 
+/* Tags */
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.tag {
+    background: rgba(0, 255, 242, 0.08);
+    color: var(--neon-blue);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(0, 255, 242, 0.15);
+    transform: translateY(-2px);
+}
 /* Main Content Styles */
 .main-content {
     flex-grow: 1;
