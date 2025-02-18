@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tags
-permalink: /secVlog/tags/
+permalink: tags/
 ---
 
 <div class="tags">
