@@ -3,7 +3,7 @@ layout: article
 title: "Web Application Penetration Testing | Hands-on intro"
 date: 2025-02-18
 categories: Web security
-tags: security, web, tutorials,penetration-testing, best-practices]
+tags: security, web, tutorials, penetration-testing, best-practices]
 ---
 
 # **Web Application Penetration Testing: Essential Commands & Tools**  
