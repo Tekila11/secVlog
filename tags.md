@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Tags
-permalink: tags/
 ---
 
 <div class="tags">
@@ -10,7 +9,7 @@ permalink: tags/
     <ul>
         {% for post in tag[1] %}
         <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="/secVlog{{ post.url }}">{{ post.title }}</a>
             <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
         </li>
         {% endfor %}
