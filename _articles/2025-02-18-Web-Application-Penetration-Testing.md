@@ -117,7 +117,7 @@ tshark -i wlan0 -w capture.pcap
 📌 [PortSwigger Web Security Academy](https://portswigger.net/web-security)  
 📌 [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)  
 📌 [HackTricks Cheat Sheet](https://book.hacktricks.xyz/)  
-📌 [TryHackMe - Web Fundamentals](https://tryhackme.com/module/web-fundamentals)  
+📌 [TryHackMe - Web Fundamentals](https://tryhackme.com/module/)  
 
 ---
 
