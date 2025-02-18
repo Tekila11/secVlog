@@ -2,7 +2,7 @@
 layout: tag
 title: "Tag: Low-Level Programming"
 tag: Low-Level Programming
-permalink: /tags/low-level-programming/
+permalink: /secVlog/tags/low-level-programming/
 ---
 
 {% for post in site.tags.Low-Level Programming %}

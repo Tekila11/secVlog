@@ -1,11 +1,11 @@
 ---
 layout: tag
-title: "Tag: security"
-tag: security
-permalink: /tags/security/
+title: "Tag: Reverse Engineering"
+tag: Reverse Engineering
+permalink: /secVlog/tags/reverse-engineering/
 ---
 
-{% for post in site.tags.security %}
+{% for post in site.tags.Reverse Engineering %}
 <article class="post">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-meta">

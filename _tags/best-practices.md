@@ -1,11 +1,11 @@
 ---
 layout: tag
-title: "Tag: ctf"
-tag: ctf
-permalink: /tags/ctf/
+title: "Tag: best-practices"
+tag: best-practices
+permalink: /secVlog/tags/best-practices/
 ---
 
-{% for post in site.tags.ctf %}
+{% for post in site.tags.best-practices %}
 <article class="post">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-meta">

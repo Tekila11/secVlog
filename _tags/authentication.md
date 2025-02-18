@@ -2,7 +2,7 @@
 layout: tag
 title: "Tag: authentication"
 tag: authentication
-permalink: /tags/authentication/
+permalink: /secVlog/tags/authentication/
 ---
 
 {% for post in site.tags.authentication %}

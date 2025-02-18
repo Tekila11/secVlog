@@ -1,11 +1,11 @@
 ---
 layout: tag
-title: "Tag: tutorials"
-tag: tutorials
-permalink: /tags/tutorials/
+title: "Tag: security"
+tag: security
+permalink: /secVlog/tags/security/
 ---
 
-{% for post in site.tags.tutorials %}
+{% for post in site.tags.security %}
 <article class="post">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-meta">
