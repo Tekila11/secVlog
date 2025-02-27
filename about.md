@@ -9,7 +9,7 @@ title: About
 <ul>
     <li><strong>Experience</strong>: 4 years in cybersecurity.</li>
     <li><strong>Specialization</strong>: Web exploitation, cryptography, and reverse engineering.</li>
-    <li><strong>CTF Teams</strong>: Member of Gung-hoFl4g and TA3COS🌮.</li>
+    <li><strong>CTF Teams</strong>: Member of Gung-hoFl4g, TA3COS🌮 and Zl9t.</li>
 </ul>
 
 <h2>Why This Blog?</h2>
