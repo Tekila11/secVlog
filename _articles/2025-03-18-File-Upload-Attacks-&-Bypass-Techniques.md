@@ -133,5 +133,15 @@ GIF89a;
 ✅ **Randomized Filenames:** Prevent attackers from predicting and accessing files.
 
 ---
+# YouTube Video
+
+Check out this awesome videos:
+
+<iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/ZWG1nNdUnBc" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
 
 💡 **Pro Tip:** Always test for multiple bypass techniques—many real-world applications fail at multiple levels. 🚀
