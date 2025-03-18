@@ -133,7 +133,7 @@ GIF89a;
 ✅ **Randomized Filenames:** Prevent attackers from predicting and accessing files.
 
 ---
-# YouTube Video
+# YouTube Videos
 
 Check out this awesome videos:
 
